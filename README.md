@@ -12,6 +12,7 @@ Are you tired of changing your Sysbot's channel status between ✅ and ❌? This
 
 Example:  
 Sv-TradeBot (Channel 1 where trades go through)
+
 Sv-TradeBot Logs (Channel 2 where the bot logs everything)
 
 ## --------------------------------
