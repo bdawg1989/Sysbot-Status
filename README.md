@@ -24,6 +24,36 @@ Input the command !logchannel followed by the bot's log channel and then the tra
 Example:  `!logchannel #Sv-TradeBot-Logs #Sv-TradeBot`
 
 
+# Needed Permissions
+
+- Do not give the bot any Admin or Ordinary Priveledges.  
+- Only add the bot to the TradeBot Channel and Logging Channel
+
+For TradeBot Channel, it needs the following:
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/b9b3d439-d6c3-43d5-a0d2-620cea210db3)
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/44837dc2-3757-4cad-a892-86599abc2e33)
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/7c3c1923-ae36-4d55-a51b-e0cc3447b22e)
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/b1b1dff4-79ab-4639-b53d-689fc28ca663)
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/09f7d950-442a-4e4c-8d39-bff75e4a538d)
+
+For the Log Channel:
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/293dc694-c186-4405-b556-4e1d6bc7b35e)
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/537ea4b4-f6a8-4a2d-86de-27754e9eb2c3)
+
+
+
+
+
+
+
+
 Example screenshots below:
 
 ![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/7338dd72-ea4e-4d80-b08a-29e04f2b7d5a)
