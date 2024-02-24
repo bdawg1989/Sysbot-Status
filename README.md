@@ -41,6 +41,14 @@ For TradeBot Channel, it needs the following:
 
 ![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/09f7d950-442a-4e4c-8d39-bff75e4a538d)
 
+**Important** - This bot will set the @everyone permission to deny anyone texting in the channel when it's closed.  And it will set it to allow @everyone when opened.
+If you do not want it to change those permissions, set Manage Permissions to OFF for this bot.
+
+![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/514817ad-8d3b-4e00-8235-90613757adc7)
+
+Any custom role you have set up for that channel **can** override the @everyone permission.  So make sure your custom roles **Send Messages** is set to **nuetral** for them to not be able to write in the channel when it's closed.
+
+
 For the Log Channel:
 
 ![image](https://github.com/bdawg1989/Sysbot-Status/assets/80122551/293dc694-c186-4405-b556-4e1d6bc7b35e)
