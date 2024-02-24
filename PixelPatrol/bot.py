@@ -114,7 +114,9 @@ async def on_message(message):
                 await update_channel.send(embed=embed, file=discord.File("./PixelPatrol/offline.gif"))
                 new_name = f"❌{update_channel.name.replace('❌', '').replace('✅', '')}"
                 await update_channel.edit(name=new_name)
-            
+                permissions = discord.PermissionOverwrite(send_messages=False)
+                await update_channel.set_permissions(message.guild.default_role, overwrite=permissions)
+                print(f"Set channel {update_channel.name} permissions to OFFLINE (send_messages=False)")
 
         elif re.search(r'\bidentified as\b', message.content, re.IGNORECASE) or re.search(r'added logging to discord channel', message.content, re.IGNORECASE) or re.search(r'dump:', message.content, re.IGNORECASE):
             if last_known_status.get(channel_id) != "online":
@@ -128,7 +130,9 @@ async def on_message(message):
                 await update_channel.send(embed=embed, file=discord.File("./PixelPatrol/online.gif"))
                 new_name = f"✅{update_channel.name.replace('❌', '').replace('✅', '')}"
                 await update_channel.edit(name=new_name)
-                
+                permissions = discord.PermissionOverwrite(send_messages=True)
+                await update_channel.set_permissions(message.guild.default_role, overwrite=permissions)
+                print(f"Set channel {update_channel.name} permissions to ONLINE (send_messages=True)")           
 
 
         # Update last_known_status and save to JSON only when status changes from "online" to "offline" or vice versa
@@ -226,4 +230,4 @@ async def on_command_error(ctx, error):
 
 
 # Replace TOKEN with your actual bot token
-bot.run('MTE0NTEyNDgzMjQ5NzkwNTcyNA.GZsiSz.f9yKSFcydfMdmS30-7zZnfkky8WUEsCQ5LuxSI')
+bot.run('TOKEN')
