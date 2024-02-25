@@ -81,6 +81,30 @@ async def logchannel(ctx, log_channel: discord.TextChannel, update_channel: disc
     save_to_json(guild_channels, "./PixelPatrol/guild_channels.json")
     await ctx.send(f"Monitoring {log_channel.mention}. Updates will be sent to {update_channel.mention}")
 
+# Remove the log channel from being monitored
+@bot.command(aliases=['rlc'])
+async def remove_logchannel(ctx, log_channel: discord.TextChannel):
+    global guild_channels
+    guild_id = str(ctx.guild.id)
+    
+    # Check if the guild is in the guild_channels dictionary
+    if guild_id in guild_channels:
+        # Check if the channel to be removed is being monitored
+        if str(log_channel.id) in guild_channels[guild_id]:
+            # Remove the channel from the dictionary
+            del guild_channels[guild_id][str(log_channel.id)]
+            
+            # Save the updated dictionary to the JSON file
+            save_to_json(guild_channels, "./PixelPatrol/guild_channels.json")
+            
+            # Inform the user of the successful removal
+            await ctx.send(f"{log_channel.mention} has been removed from monitoring.")
+        else:
+            # Inform the user if the channel was not being monitored
+            await ctx.send(f"{log_channel.mention} is not currently being monitored.")
+    else:
+        await ctx.send("There are no channels being monitored for this guild.")
+        
 @bot.event
 async def on_message(message):
     await bot.process_commands(message)
