@@ -23,6 +23,13 @@ Input the command !logchannel followed by the bot's log channel and then the tra
 
 Example:  `!logchannel #Sv-TradeBot-Logs #Sv-TradeBot`
 
+**Remove Channels**
+
+If you need to remove a channel from the list, simply run the command below
+
+`!rlc #Sv-TradeBot-Logs #Sv-TradeBot` and replace the channels with your own that you have added in the command.
+
+
 
 # Needed Permissions
 
