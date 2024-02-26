@@ -80,7 +80,7 @@ Example screenshots below:
 
 # Important Links
 Looking for a place to host your Bot?
-[PebbleHost - $3/month](https://pebblehost.com/bot-hosting) 
+[PebbleHost - $3/month](https://billing.pebblehost.com/aff.php?aff=2873)
 
 Want to use my bot?
 [Invite Link](https://discord.com/api/oauth2/authorize?client_id=1145124832497905724&permissions=0&scope=bot)
